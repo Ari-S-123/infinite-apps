@@ -125,7 +125,12 @@ export default function Page(): JSX.Element {
                     <span className="text-code-keyword">const</span>{" "}
                     <span className="text-code-function">applyToJob</span> ={" "}
                     <span className="text-muted-foreground">(</span>
-                    <span className="text-foreground">linkedInUrl</span>
+                    <span className="text-foreground">profileUrl</span>
+                    <span className="text-muted-foreground">:</span> <span className="text-code-keyword">string</span>
+                    <span className="text-muted-foreground">,</span>
+                    {"\n"}
+                    {"  "}
+                    <span className="text-foreground">jobUrl</span>
                     <span className="text-muted-foreground">:</span> <span className="text-code-keyword">string</span>
                     <span className="text-muted-foreground">)</span>
                     <span className="text-muted-foreground">:</span> <span className="text-code-keyword">void</span>{" "}
