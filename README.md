@@ -1,5 +1,7 @@
 # Infinite Applications
 
+Experience the absurdity of modern tech recruiting. Watch as a developer attempts to apply for jobs with impossible requirements—one rejection at a time.
+
 *Automatically synced with your [v0.app](https://v0.app) deployments*
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/ari-s-projects/v0-job-application-script)
