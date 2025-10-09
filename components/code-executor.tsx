@@ -434,7 +434,7 @@ export function CodeExecutor({
       <div className="mx-auto max-w-7xl">
         <header className="mb-6 flex flex-wrap items-center justify-between gap-4">
           <div>
-            <h1 className="font-mono text-2xl font-bold sm:text-3xl">Job Application Simulator</h1>
+            <h2 className="font-mono text-2xl font-bold sm:text-3xl">Job Application Simulator</h2>
             <p className="text-sm text-muted-foreground">Watching the infinite loop in action...</p>
           </div>
 

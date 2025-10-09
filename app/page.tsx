@@ -234,24 +234,12 @@ export default function Page(): JSX.Element {
 
           {showDemo && (
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
-              <Button
-                size="lg"
-                variant="outline"
-                className="gap-2 font-mono text-base bg-transparent"
-                asChild
-                aria-label="Visit LinkedIn to apply for more jobs (opens in new tab)"
-              >
+              <Button size="lg" variant="outline" className="gap-2 font-mono text-base bg-transparent" asChild>
                 <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                   Apply to More Jobs
                 </a>
               </Button>
-              <Button
-                size="lg"
-                variant="ghost"
-                onClick={handleReset}
-                className="font-mono text-base"
-                aria-label="Reset simulation and return to start"
-              >
+              <Button size="lg" variant="ghost" onClick={handleReset} className="font-mono text-base">
                 Start Over
               </Button>
             </div>
