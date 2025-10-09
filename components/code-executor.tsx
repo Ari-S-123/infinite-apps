@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Play, Pause, RotateCcw, FastForward } from "lucide-react"
+import { Play, Pause, RotateCcw, FastForward, Rewind } from "lucide-react"
 import { StatsDashboard } from "@/components/stats-dashboard"
 import { ConsoleOutput } from "@/components/console-output"
 import { JobPosting } from "@/components/job-posting"
@@ -336,6 +336,13 @@ export function CodeExecutor({
   }
 
   /**
+   * Handles slow-down functionality by decreasing animation speed.
+   */
+  const handleSlowDown = (): void => {
+    setSpeed((prev) => Math.max(prev / 2, 0.25))
+  }
+
+  /**
    * Handles reset functionality by clearing all state.
    */
   const handleReset = (): void => {
@@ -483,16 +490,31 @@ export function CodeExecutor({
                 </>
               )}
             </Button>
-            <Button
-              onClick={handleFastForward}
-              variant="outline"
-              size="sm"
-              className="gap-2 bg-transparent"
-              aria-label={`Fast forward simulation, current speed ${speed}x`}
-            >
-              <FastForward className="h-4 w-4" aria-hidden="true" />
-              {speed}x
-            </Button>
+            <div className="flex items-center gap-1 rounded-md border border-border bg-background">
+              <Button
+                onClick={handleSlowDown}
+                variant="ghost"
+                size="sm"
+                className="gap-1 rounded-r-none border-r border-border px-2"
+                aria-label={`Slow down simulation, current speed ${speed}x`}
+                disabled={speed <= 0.25}
+              >
+                <Rewind className="h-4 w-4" aria-hidden="true" />
+              </Button>
+              <span className="px-2 font-mono text-sm font-medium" aria-live="polite">
+                {speed}x
+              </span>
+              <Button
+                onClick={handleFastForward}
+                variant="ghost"
+                size="sm"
+                className="gap-1 rounded-l-none border-l border-border px-2"
+                aria-label={`Speed up simulation, current speed ${speed}x`}
+                disabled={speed >= 8}
+              >
+                <FastForward className="h-4 w-4" aria-hidden="true" />
+              </Button>
+            </div>
             <Button
               onClick={handleReset}
               variant="outline"
