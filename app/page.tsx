@@ -110,7 +110,7 @@ export default function Page(): JSX.Element {
               </Button>
             </div>
 
-            <div className="mx-auto max-w-3xl overflow-hidden rounded-xl border border-border bg-card">
+            <div className="mx-auto max-w-3xl overflow-hidden rounded-xl border border-border bg-card mb-12">
               <div className="flex items-center gap-2 border-b border-border bg-secondary px-4 py-3">
                 <div className="flex gap-1.5" role="presentation" aria-label="Window controls">
                   <div className="h-3 w-3 rounded-full bg-destructive" aria-label="Close" />
