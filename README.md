@@ -1,4 +1,4 @@
-# Job application script
+# Infinite Applications
 
 *Automatically synced with your [v0.app](https://v0.app) deployments*
 
