@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { CodeExecutor } from "@/components/code-executor"
 import { AccessibilityInfo } from "@/components/accessibility-info"
-import { Play, Zap, ChevronDown, Github } from "lucide-react"
+import { Play, Zap, ChevronDown } from "lucide-react"
 import type { JSX } from "react/jsx-runtime"
 
 /**
@@ -51,25 +51,10 @@ export default function Page(): JSX.Element {
         Skip to main content
       </a>
 
-      <div className="fixed right-4 top-4 z-40">
-        <Button
-          size="sm"
-          variant="outline"
-          className="gap-2 font-mono bg-transparent"
-          asChild
-          aria-label="View source code on GitHub (opens in new tab)"
-        >
-          <a href="https://github.com/Ari-S-123/infinite-apps" target="_blank" rel="noopener noreferrer">
-            <Github className="h-4 w-4" aria-hidden="true" />
-            <span className="hidden sm:inline">View Source</span>
-          </a>
-        </Button>
-      </div>
-
       {!showDemo ? (
         <main id="main-content" className="flex min-h-screen flex-col items-center justify-center px-4">
           <div className="mx-auto max-w-4xl text-center">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-sm text-primary">
+            <div className="mt-4 mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-sm text-primary">
               <Zap className="h-4 w-4" aria-hidden="true" />
               <span className="font-mono">Developer Humor Simulator</span>
             </div>

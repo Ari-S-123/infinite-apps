@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Suspense } from "react"
 import { Analytics } from "@vercel/analytics/react"
+import { Button } from "@/components/ui/button"
+import { Github } from "lucide-react"
 import "./globals.css"
 
 const geistSans = Geist({
@@ -36,7 +38,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`dark ${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <body className="font-sans">
+      <body className="font-sans relative">
+        <div className="absolute right-2 top-2 z-50 isolate pointer-events-auto sm:right-4 sm:top-4">
+          <Button
+            size="sm"
+            variant="outline"
+            className="gap-2 font-mono bg-transparent shadow-lg"
+            asChild
+            aria-label="View source code on GitHub (opens in new tab)"
+          >
+            <a href="https://github.com/Ari-S-123/infinite-apps" target="_blank" rel="noopener noreferrer">
+              <Github className="h-4 w-4" aria-hidden="true" />
+              <span className="hidden sm:inline">View Source</span>
+            </a>
+          </Button>
+        </div>
+
         <Suspense
           fallback={
             <div className="flex min-h-screen items-center justify-center">

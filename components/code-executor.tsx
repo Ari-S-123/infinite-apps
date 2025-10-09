@@ -463,13 +463,13 @@ export function CodeExecutor({
       )}
 
       <div className="mx-auto max-w-7xl">
-        <header className="mb-6 flex flex-wrap items-center justify-between gap-4">
-          <div>
+        <header className="mb-6 space-y-4">
+          <div className="text-center">
             <h2 className="font-mono text-2xl font-bold sm:text-3xl">Job Application Simulator</h2>
             <p className="text-sm text-muted-foreground">Watching the infinite loop in action...</p>
           </div>
 
-          <nav aria-label="Simulation controls" className="flex flex-wrap items-center gap-2">
+          <nav aria-label="Simulation controls" className="flex flex-wrap items-center justify-center gap-3">
             <Button
               onClick={onToggleRunning}
               variant={isRunning ? "destructive" : "default"}
