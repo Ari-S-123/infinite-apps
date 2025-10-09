@@ -14,7 +14,7 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 Your project is live at:
 
-**[https://vercel.com/ari-s-projects/v0-job-application-script](https://vercel.com/ari-s-projects/infinite-apps)**
+**[https://vercel.com/ari-s-projects/infinite-apps](https://vercel.com/ari-s-projects/infinite-apps)**
 
 ## Build your app
 
