@@ -104,7 +104,6 @@ export default function Page(): JSX.Element {
                   element?.scrollIntoView({ behavior: "smooth" })
                 }}
                 className="font-mono text-base"
-                aria-label="Scroll to explanation section"
               >
                 Explain the Joke
                 <ChevronDown className="ml-2 h-4 w-4" aria-hidden="true" />
