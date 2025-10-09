@@ -51,7 +51,8 @@
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
+  /* Increased lightness from 0.708 to 0.76 for WCAG AA compliance (5:1 contrast ratio) */
+  --muted-foreground: oklch(0.76 0 0);
   --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
   /* Increased brightness and saturation for better contrast in dark mode */
