@@ -121,7 +121,7 @@ export default function Page(): JSX.Element {
                 <span className="ml-2 font-mono text-xs text-muted-foreground">job-application.ts</span>
               </div>
               <div className="p-6">
-                <pre className="overflow-x-auto text-left font-mono text-sm leading-relaxed" lang="typescript">
+                <pre className="overflow-x-auto text-left font-mono text-sm leading-relaxed">
                   <code>
                     <span className="text-code-keyword">const</span>{" "}
                     <span className="text-code-function">applyToJob</span> ={" "}

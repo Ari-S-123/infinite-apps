@@ -156,4 +156,17 @@
   .text-code-string {
     @apply text-chart-4;
   }
+
+  /* Improved syntax highlighting colors for WCAG AA contrast compliance */
+  .text-code-keyword {
+    @apply text-[oklch(0.75_0.15_264)];
+  }
+
+  .text-code-function {
+    @apply text-[oklch(0.8_0.12_162)];
+  }
+
+  .text-code-string {
+    @apply text-[oklch(0.75_0.18_304)];
+  }
 }

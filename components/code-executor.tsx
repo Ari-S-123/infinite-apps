@@ -504,7 +504,7 @@ export function CodeExecutor({
                 <span className="ml-2 font-mono text-xs text-muted-foreground">infinite-applications.ts</span>
               </div>
               <div className="p-4">
-                <pre className="font-mono text-sm leading-relaxed" lang="typescript" aria-label="Code example">
+                <pre className="font-mono text-sm leading-relaxed" aria-label="Code example">
                   {codeLines.map((line, index) => (
                     <div
                       key={index}
