@@ -5,6 +5,7 @@ import { Suspense } from "react"
 import { Analytics } from "@vercel/analytics/react"
 import { Button } from "@/components/ui/button"
 import { Github } from "lucide-react"
+import { MobileWarning } from "@/components/mobile-warning"
 import "./globals.css"
 
 const geistSans = Geist({
@@ -39,6 +40,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`dark ${geistSans.variable} ${geistMono.variable} antialiased`}>
       <body className="font-sans relative">
+        <MobileWarning />
+
         <div className="absolute right-2 top-2 z-50 isolate pointer-events-auto sm:right-4 sm:top-4">
           <Button
             size="sm"
